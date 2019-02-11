@@ -1,7 +1,6 @@
 FROM java:8
 RUN apt-get update
 RUN apt-get install -y maven
-RUN apt-get install oracle-java8-installer
 WORKDIR ./
 ADD pom.xml ./pom.xml
 ADD src /src
