@@ -4,7 +4,7 @@ pipeline {
         stage('Build Docker Image'){
 	        steps {
 	            script{
-	                app=docker.build("priyanka6209/java-app")
+	                app=docker.build("priyanka6209/spring-app")
 	                app.inside{
 	                  sh 'echo $(curl localhost:8081)'
 	                }
